@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SisVcs</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel=" stylesheet " href=" https://use.fontawesome.com/51e112761c.css ">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <button class="mover-janela">SV ( CAM )</button>
+    <button class="fa fa-power-off fa-2x"></button>
+    <fieldset>
+        <legend>Identificação</legend>
+        <img alt="" id="foto" name="foto">
+        <!-- <img src="" alt="" name="foto"> -->
+        <br>
+        <input type="file" name="imagem">
+        <div class="container">
+            <video src="" id="video" autoplay></video>
+            <button type="button" id="btCapt">Captura</button>
+        </div>
+        <select name="temporizador" id="temporizador">
+            <optgroup label="Temporizador">
+                <option value="1000">1 segundos</option>
+                <option value="3000">3 segundos</option>
+                <option value="5000">5 segundos</option>
+                <option value="7000">7 segundos</option>
+                <option value="10000">10 segundos</option>
+            </optgroup>
+        </select>
+
+    </fieldset>
+    <center>
+        <button type="button" id="btCarregar">Enviar...</button>
+    </center>
+  
+        <div class="recebe-foto">
+            <canvas id='canvas' href="#"></canvas> <!-- TIRANDO A FOTO E COLOCANDO NO CANVA-->
+        </div>
+            
+
+
+
+    <script src="src/script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</body>
+
+</html>
